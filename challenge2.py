@@ -346,9 +346,9 @@ class KillerAlien:
         self.dy = np.random.uniform(15, 40) * np.sin(self.angle) # Initial vertical speed based on random starting speed
 
         # Load the image for the sprite
-        killer_alien_image = pyglet.image.load(f'aliens/killer_alien_128px_001.png')
+        killer_alien_image = pg.image.load(f'aliens/killer_alien_128px_001.png')
         # Create the sprite from the image
-        self.sprite = pyglet.sprite.Sprite(img=killer_alien_image, x=self.x, y=self.y, z=0)
+        self.sprite = pg.sprite.Sprite(img=killer_alien_image, x=self.x, y=self.y, z=0)
         
         self.explosions = [] # empty list for future explosions
 
@@ -377,9 +377,9 @@ class Aliens:
         self.dy = np.random.uniform(15, 40) * np.sin(self.angle) # Initial vertical speed based on random starting speed
 
         # Load the image for the sprite
-        alien_image = pyglet.image.load(f'aliens/aliens_128px_00{np.random.randint(1,8)}.png')
+        alien_image = pg.image.load(f'aliens/aliens_128px_00{np.random.randint(1,8)}.png')
         # Create the sprite from the image
-        self.sprite = pyglet.sprite.Sprite(img=alien_image, x=self.x, y=self.y, z=0)
+        self.sprite = pg.sprite.Sprite(img=alien_image, x=self.x, y=self.y, z=0)
         
         self.explosions = [] # empty list for future explosions
 
@@ -517,9 +517,9 @@ class Cannonball:
 #         self.dy = np.random.uniform(15, 40) * np.sin(self.angle) # Initial vertical speed based on random starting speed
 
 #         # Load the image for the sprite
-#         missile_image = pyglet.image.load(f'missiles/missile_0{np.random.randint(1,3)}.png')
+#         missile_image = pg.image.load(f'missiles/missile_0{np.random.randint(1,3)}.png')
 #         # Create the sprite from the image
-#         self.sprite = pyglet.sprite.Sprite(img=missile_image, x=self.x, y=self.y, z=0)
+#         self.sprite = pg.sprite.Sprite(img=missile_image, x=self.x, y=self.y, z=0)
         
 #         self.explosions = [] # empty list for future explosions
         
